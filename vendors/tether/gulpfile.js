@@ -9,7 +9,6 @@ var plumber     = require('gulp-plumber');
 var prefixer    = require('gulp-autoprefixer');
 var rename      = require('gulp-rename');
 var uglify      = require('gulp-uglify');
-var sass        = require('gulp-sass');
 var umd         = require('gulp-wrap-umd');
 
 // Variables
@@ -57,7 +56,6 @@ gulp.task('js', function() {
 gulp.task('css', function() {
   gulp.src('./src/css/**/*.sass')
     .pipe(plumber())
-    .pipe(sass())
     .pipe(prefixer())
 
     // Original

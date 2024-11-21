@@ -109,12 +109,7 @@ module.exports = function(grunt) {
         }
       }
     },
-    sasslint: {
-      options: {
-        configFile: './.sass-lint.yml',
-      },
-      target: ['./src/sass/**/*.scss']
-    },
+
     lesslint: {
       src: ['./src/less/bootstrap-slider.less']
     },
@@ -274,7 +269,6 @@ module.exports = function(grunt) {
   grunt.registerTask('lint', [
     'jshint',
     'lesslint',
-    'sasslint'
   ]);
   grunt.registerTask('test', [
     'babel',
