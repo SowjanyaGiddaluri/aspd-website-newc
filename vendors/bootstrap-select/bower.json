@@ -22,6 +22,7 @@
   "ignore": [
     ".gitignore",
     "CONTRIBUTING.md",
+    "Gruntfile.js",
     "README.md",
     "composer.json",
     "package.json",
